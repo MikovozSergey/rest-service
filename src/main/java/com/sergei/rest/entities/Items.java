@@ -12,6 +12,7 @@ public class Items {
     private Collection<Orders> ordersById;
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     public Long getId() {
         return id;
